@@ -15,21 +15,21 @@ class Styles {
     fontWeight: FontWeight.w700,
     color: kPrimaryColor,
     fontSize: 16.0,
-    height: 22 / 18,
+    height: 20 / 18,
   );
 
   static TextStyle h3 = defaultStyle.copyWith(
-    fontWeight: FontWeight.w700,
-    color: Colors.grey[700],
-    fontSize: 18.0,
-    height: 22 / 18,
+    fontWeight: FontWeight.w400,
+    color: Colors.white,
+    fontSize: 12.0,
+    height: 16 / 14,
   );
 
   static InputDecoration input = InputDecoration(
     fillColor: Colors.white,
     focusColor: kPrimaryColor,
     contentPadding:
-        EdgeInsets.fromLTRB(20.0, 5.0, 20.0, 0.0), //here your padding
+        const EdgeInsets.fromLTRB(20.0, 5.0, 20.0, 0.0), //here your padding
     filled: true,
     hintStyle: TextStyle(color: Colors.grey[800]),
     enabledBorder: OutlineInputBorder(

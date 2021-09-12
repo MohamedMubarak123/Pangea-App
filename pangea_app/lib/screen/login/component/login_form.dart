@@ -58,7 +58,7 @@ class LogInFormState extends State<LoginForm> {
             //   return Validate.requiredField(value, "هذا الحقل مطلوب");
             // },
           ),
-          SizedBox(height: getProportionateScreenHeight(30)),
+          SizedBox(height: getProportionateScreenHeight(20)),
           TextFormField(
             decoration: Styles.input.copyWith(hintText: 'password'),
             keyboardType: TextInputType.visiblePassword,
@@ -67,7 +67,12 @@ class LogInFormState extends State<LoginForm> {
             //   return Validate.requiredField(value, "هذا الحقل مطلوب");
             // },
           ),
-          const DefaultButton("Login"),
+          DefaultButton(
+            "Login",
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('/homeScreen');
+            },
+          ),
           const Center(
             child: InkWell(
               // onTap: () => Get.to(CompleteProfileScreen()),

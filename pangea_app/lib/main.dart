@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pangea_app/screen/login/login_screen.dart';
+import 'package:pangea_app/route_generator.dart';
 import 'package:pangea_app/utils/theme.dart';
 
 void main() {
@@ -15,8 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Pangea app',
       theme: theme(),
+      initialRoute: '/LoginScreen',
+      onGenerateRoute: RouteGenerator.generateRoute,
       debugShowCheckedModeBanner: false,
-      home: const SignInScreen(),
     );
   }
 }
