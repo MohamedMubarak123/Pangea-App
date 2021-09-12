@@ -13,7 +13,7 @@ class SearchBarWidget extends StatelessWidget {
         // Navigator.of(context).push(SearchModal());
       },
       child: Container(
-        padding: EdgeInsets.all(9),
+        padding: const EdgeInsets.all(9),
         decoration: BoxDecoration(
             color: Colors.grey.shade100,
             border: Border.all(
@@ -35,7 +35,7 @@ class SearchBarWidget extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .caption!
-                    .merge(TextStyle(fontSize: 13)),
+                    .merge(const TextStyle(fontSize: 13)),
               ),
             ),
             SizedBox(width: getProportionateScreenWidth(0)),

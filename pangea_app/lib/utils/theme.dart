@@ -37,10 +37,6 @@ AppBarTheme appBarTheme() {
     color: kPrimaryColor,
     elevation: 0,
     centerTitle: true,
-    brightness: Brightness.light,
     iconTheme: IconThemeData(color: Colors.white),
-    textTheme: TextTheme(
-      headline6: TextStyle(color: Colors.white, fontSize: 18),
-    ),
   );
 }

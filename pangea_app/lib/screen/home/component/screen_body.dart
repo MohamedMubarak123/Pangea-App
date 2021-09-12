@@ -28,7 +28,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: Colors.deepOrangeAccent,
                     title: "Live Consultation",
-                    sub_title: "Live Consultation session with any provider",
+                    subTitle: "Live Consultation session with any provider",
                     icon: Icons.videocam,
                   ),
                   SizedBox(
@@ -37,7 +37,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: Colors.green,
                     title: "Book Appointment",
-                    sub_title: "Book your activity with any register doctor",
+                    subTitle: "Book your activity with any register doctor",
                     icon: Icons.calendar_today_outlined,
                   ),
                   SizedBox(
@@ -46,7 +46,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: kPrimaryColor,
                     title: "My IPS",
-                    sub_title: "View my IPS",
+                    subTitle: "View my IPS",
                     icon: Icons.insert_drive_file,
                   ),
                   SizedBox(
@@ -55,7 +55,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: kPrimaryLightColor,
                     title: "My QR Code",
-                    sub_title: "Display your QR code to any provider",
+                    subTitle: "Display your QR code to any provider",
                     icon: Icons.qr_code,
                   ),
                   SizedBox(
@@ -64,7 +64,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: Colors.grey,
                     title: "Upload report/file",
-                    sub_title: "Upload clinical document in your IPS",
+                    subTitle: "Upload clinical document in your IPS",
                     icon: Icons.cloud_upload_outlined,
                   ),
                   SizedBox(
@@ -73,7 +73,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: Colors.grey,
                     title: "Authorized Access",
-                    sub_title: "Give Permission to upload UMF to any Provider",
+                    subTitle: "Give Permission to upload UMF to any Provider",
                     icon: Icons.verified_user,
                   ),
                   SizedBox(
@@ -82,7 +82,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: kPrimaryLightColor,
                     title: "My Prescription",
-                    sub_title: "View all your prescription",
+                    subTitle: "View all your prescription",
                     icon: Icons.remove_from_queue,
                   ),
                   SizedBox(
@@ -91,7 +91,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: Colors.deepOrangeAccent,
                     title: "My Clinical Report",
-                    sub_title: "View all your past clinical report",
+                    subTitle: "View all your past clinical report",
                     icon: Icons.insert_drive_file,
                   ),
                   SizedBox(
@@ -100,7 +100,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: kPrimaryLightColor,
                     title: "My Calender",
-                    sub_title: "View all upcoming event and prescription",
+                    subTitle: "View all upcoming event and prescription",
                     icon: Icons.calendar_today,
                   ),
                   SizedBox(
@@ -109,7 +109,7 @@ class HomeBody extends StatelessWidget {
                   const ServiceCardWidget(
                     color: kPrimaryColor,
                     title: "Insurance card",
-                    sub_title: "View all your insurance details",
+                    subTitle: "View all your insurance details",
                     icon: Icons.credit_card,
                   ),
                 ],

@@ -69,7 +69,7 @@ class LogInFormState extends State<LoginForm> {
           ),
           DefaultButton(
             "Login",
-            onPressed: () {
+            onPresse: () {
               Navigator.of(context).pushReplacementNamed('/homeScreen');
             },
           ),

@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Pangea app',
       theme: theme(),
-      initialRoute: '/LoginScreen',
+      initialRoute: '/homeScreen',
       onGenerateRoute: RouteGenerator.generateRoute,
       debugShowCheckedModeBanner: false,
     );

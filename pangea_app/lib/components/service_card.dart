@@ -4,12 +4,12 @@ import 'package:pangea_app/utils/size_config.dart';
 
 class ServiceCardWidget extends StatelessWidget {
   const ServiceCardWidget(
-      {Key? key, this.color, this.title, this.sub_title, this.icon})
+      {Key? key, this.color, this.title, this.subTitle, this.icon})
       : super(key: key);
 
   final Color? color;
 
-  final String? title, sub_title;
+  final String? title, subTitle;
   final IconData? icon;
 
   @override
@@ -46,7 +46,7 @@ class ServiceCardWidget extends StatelessWidget {
                     height: getProportionateScreenHeight(5),
                   ),
                   Text(
-                    sub_title!,
+                    subTitle!,
                     style: Styles.h3,
                   ),
                 ],

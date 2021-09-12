@@ -3,11 +3,12 @@ import 'package:pangea_app/utils/colors.dart';
 
 class DefaultButton extends StatelessWidget {
   final String text;
-  final onPressed;
+  // ignore: prefer_typing_uninitialized_variables
+  final onPresse;
 
   const DefaultButton(
     this.text, {
-    this.onPressed,
+    this.onPresse,
     Key? key,
   }) : super(key: key);
 
@@ -16,9 +17,10 @@ class DefaultButton extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
       constraints: const BoxConstraints(maxWidth: 500),
+      // ignore: deprecated_member_use
       child: RaisedButton(
         onPressed: () {
-          onPressed;
+          onPresse;
         },
         color: kPrimaryColor,
         shape: const RoundedRectangleBorder(
