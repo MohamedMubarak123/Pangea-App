@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:pangea_app/screen/home/home_screen.dart';
 import 'package:pangea_app/utils/colors.dart';
 
 class DefaultButton extends StatelessWidget {
@@ -20,7 +22,7 @@ class DefaultButton extends StatelessWidget {
       // ignore: deprecated_member_use
       child: RaisedButton(
         onPressed: () {
-          onPresse;
+          Get.to(() => const HomeScreen());
         },
         color: kPrimaryColor,
         shape: const RoundedRectangleBorder(

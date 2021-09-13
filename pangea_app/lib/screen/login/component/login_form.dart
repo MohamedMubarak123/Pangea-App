@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:pangea_app/components/default_button.dart';
+import 'package:pangea_app/screen/home/home_screen.dart';
 import 'package:pangea_app/style/style.dart';
 import 'package:pangea_app/utils/colors.dart';
 import 'package:pangea_app/utils/size_config.dart';
@@ -55,7 +57,7 @@ class LogInFormState extends State<LoginForm> {
             keyboardType: TextInputType.emailAddress,
             // validator: (value) {
             //   phone = value.trim();
-            //   return Validate.requiredField(value, "هذا الحقل مطلوب");
+            //   return Validate.requiredField(value, "enter valid email");
             // },
           ),
           SizedBox(height: getProportionateScreenHeight(20)),
@@ -64,18 +66,14 @@ class LogInFormState extends State<LoginForm> {
             keyboardType: TextInputType.visiblePassword,
             // validator: (value) {
             //   phone = value.trim();
-            //   return Validate.requiredField(value, "هذا الحقل مطلوب");
+            //   return Validate.requiredField(value, "password required");
             // },
           ),
-          DefaultButton(
-            "Login",
-            onPresse: () {
-              Navigator.of(context).pushReplacementNamed('/homeScreen');
-            },
-          ),
+          DefaultButton("Login",
+              onPresse: () => Get.to(() => const HomeScreen())),
           const Center(
             child: InkWell(
-              // onTap: () => Get.to(CompleteProfileScreen()),
+              // onTap: () => Get.to(() => const HomeScreen()),
               child: Text(
                 "Forget Password?",
                 style: TextStyle(color: kPrimaryColor),
